@@ -1,0 +1,374 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+    font-size: 16px; /* Tamaño base de fuente */
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .logo img {
+    border-radius: 50%;
+    width: 70px;  /* Ajusta el tamaño según sea necesario */
+    height: 70px; /* Ajusta el tamaño según sea necesario */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+section {
+    padding: 50px 2rem;
+    text-align: center;
+}
+
+/* Sección Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1568056919983-dc8faa4bf83b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Sección de Características */
+.features {
+    background-color: #f3f4f6;
+    padding: 60px 2rem;
+    text-align: center;
+}
+
+.features .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.features p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 1rem;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #ff5a5f;
+}
+
+.feature h3 {
+    margin: 20px 0 10px 0;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Sección de Galería */
+.galeria {
+    background-color: #f1f1f1;
+}
+
+.galeria-filtros {
+    margin-bottom: 1rem;
+}
+
+.filter-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.galeria-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.galeria-item {
+    width: calc(33.333% - 2rem);
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-item img,
+.galeria-item video {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+    background-color: #eaeaea;
+}
+
+.equipo {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    text-align: center;
+    max-width: 300px;
+}
+
+.miembro img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.miembro h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.miembro p {
+    font-size: 0.9rem;
+}
+
+/* Sección de Redes Sociales */
+.redes-sociales {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.redes-sociales h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Contenedor principal que alinea el contenido */
+.social-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icon-whatsapp:hover {
+    color: #25D366;
+}
+
+.social-icon-facebook:hover {
+    color: #4267B2;
+}
+
+.social-icon-instagram:hover {
+    color: #E4405F;
+}
+
+.social-image img {
+    max-width: 550px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 30px 1rem;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 500px;
+        margin: 1rem 0;
+    }
+
+    .galeria-item {
+        width: calc(50% - 2rem);
+    }
+
+    .miembro {
+        flex: 1 1 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .features p {
+        font-size: 16px;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+
+    .social-content {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 50%; /* Reduce el tamaño de la fuente al 50% en pantallas pequeñas */
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .features p {
+        font-size: 14px;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 300px; /* Reduce el tamaño máximo de las características en pantallas pequeñas */
+    }
+
+    .galeria-item {
+        width: 100%;
+    }
+
+    .miembro img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+    }
+
+    .social-image img {
+        max-width: 100%; /* Ajusta la imagen al ancho disponible en pantallas pequeñas */
+    }
+}
